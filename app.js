@@ -20,7 +20,7 @@ var db = require('./database/db-connector')
 */
 app.get('/', function(req, res)
     {  
-        let query1 = "SELECT * FROM bsg_people;";               // Define our query
+        let query1 = "SELECT * FROM Authors;";               // Define our query
 
         db.pool.query(query1, function(error, rows, fields){    // Execute the query
 

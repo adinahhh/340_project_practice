@@ -22,14 +22,12 @@
     {{!-- Body section --}}
     <tbody>
 
-        {{!-- For each row, print the id, fname, lname, homeworld and age, in order --}}
+        {{!-- For each row, print the author_id, first_name, and last_name in order --}}
         {{#each data}}
         <tr>
-            <td>{{this.id}}</td>
-            <td>{{this.fname}}</td>
-            <td>{{this.lname}}</td>
-            <td>{{this.homeworld}}</td>
-            <td>{{this.age}}</td>
+            <td>{{this.author_id}}</td>
+            <td>{{this.first_name}}</td>
+            <td>{{this.last_name}}</td>
         </tr>
         {{/each}}
     </tbody>
